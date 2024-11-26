@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+        nav {
+            background-color :black;
+            color :white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav span {
+            margin-right : 20px;
+        }
+    </style>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- <script src="../node_modules/react/umd/react.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom-server-legacy.browser.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.js"></script> -->
+
+
+   <script type="text/babel">
+       
+    //   ReactDOM.render("Welcome to React JS.", document.getElementById("root"));
+
+  
+     
+    // function Login(){
+    //     return(
+    //         <div>
+    //             <h3>User Login</h3>
+    //             <dl>
+    //                 <dt>User Name</dt> 
+    //                 <dd><input type="text"/></dd>
+    //                 <dt>Password</dt> 
+    //                 <dd><input type="password"/></dd>
+    //             </dl>   
+    //             <button>Login</button> 
+    //         </div>
+
+    //     )
+    // }
+
+    // ReactDOM.render(<Login />, document.getElementById("root")); 
+
+    // ReactDOM.render("Welcome to react js", document.getElementById("root"));
+
+
+    function NavBar(){
+        return (
+            <nav>
+                <span>Shopping</span>
+                <div>
+                    <span>Home</span>
+                    <span>Shop</span>
+                    <span>Blog</span>
+                    <span>Pages</span>
+                </div>    
+                <div>
+                    <span>Signin</span>
+                </div>    
+            </nav>
+        )
+    }
+
+
+    ReactDOM.render(<div> < NavBar /> < NavBar /> < NavBar /> </div>, document.getElementById("root"))
+    </script>
+</head>
+<body>
+    <noscript>Please enable JavaScript on your browser.</noscript>
+    <div id="root"></div>
+</body>
+</html>
